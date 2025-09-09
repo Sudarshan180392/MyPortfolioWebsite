@@ -137,25 +137,24 @@
         })
    // Wait for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the form
   const contactForm = document.getElementById("contact-form");
 
-  // Add event listener for form submission
-  contactForm.addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent default page reload
+  emailjs.init("WXrH-AVfyd7sFpZloY"); // initialize with your public key
 
-    // Send the form using EmailJS
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
     emailjs
       .sendForm(
-        "service_vg9c0u8",   // 🔹 Replace with your Service ID from EmailJS
-        "template_ask86co",  // 🔹 Replace with your Template ID
-        "#contact-form",     // 🔹 Matches your form's ID
-        "WXrH-AVfyd7sFpZloY"    // 🔹 Replace with your Public Key (not the secret one)
+        "service_vg9c0u8",   // Service ID
+        "template_ask86co", // Template ID
+        "#contact-form",    // Form ID selector
+        "WXrH-AVfyd7sFpZloY" // Public key
       )
       .then(
         function (response) {
           alert("✅ Message sent successfully!");
-          contactForm.reset(); // clear form after sending
+          contactForm.reset();
         },
         function (error) {
           alert("❌ Failed to send message. Please try again.");
@@ -164,3 +163,4 @@ document.addEventListener("DOMContentLoaded", function () {
       );
   });
 });
+
