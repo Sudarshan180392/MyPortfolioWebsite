@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan Mishra - Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Sudarshan Mishra</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sudarshan Mishra </h1>
+            <p class="subtitle"><span class="cursor">|</span></p>
+            <p class="description">
+                Passionate about creating functional, and user-centered websites. 
+                I combine technical expertise with creative design to build exceptional web applications.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Hello! I'm Sudarshan, a passionate full-stack developer 
+                    creating digital experiences that users love. I specialize in modern web technologies 
+                    and have a keen eye for design.
+                </p>
+                <p>
+                    My journey began with a Chemical Engineering degree, but my passion for creating 
+                    beautiful and functional websites drove me to Software Development continuously learn and adapt 
+                    to new technologies and design trends.
+                </p>
+              
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">My SQL</span>
+                     <span class="skill-tag">HTML & CSS</span>
+                    
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="profile-img">
+                    <img src="My Image .png" alt="Sudarshan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🚀</div>
+                <div class="project-content">
+                    <h3 class="project-title">Calculator</h3>
+                    <p class="project-description">
+                        
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sudarshan180392.github.io/BasicCalc-App/" target="_blank" class="project-link link-demo">Live Demo</a>
+                        <a href="https://github.com/Sudarshan180392/BasicCalc-App" target="_blank" class="project-link link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📱</div>
+                <div class="project-content">
+                    <h3 class="project-title">Kanban Board App</h3>
+                    <p class="project-description">
+                        A simple and interactive Kanban Board which helps users organize tasks.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sudarshan180392.github.io/Project-Kanban-Board/" target="_blank" class="project-link link-demo">Live Demo</a>
+                        <a href="https://github.com/Sudarshan180392/Project-Kanban-Board" target="_blank" class="project-link link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3 class="project-title">Expense-tracker</h3>
+                    <p class="project-description">
+                        A simple Expense Tracker App built with HTML, CSS, and JavaScript.
+It allows users to add, delete, and track expenses with data persistence using localStorage.
+                    </p>
+                    <div class="project-tech">
+                      <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://sudarshan180392.github.io/Expense-tracker/" target="_blank" class="project-link link-demo">Live Demo</a>
+                        <a href="https://github.com/Sudarshan180392/Expense-tracker" target="_blank" class="project-link link-code">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2 class="section-title">Let's Work Together</h2>
+        <div class="contact-content">
+            <p class="contact-description">
+                Have a project in mind? I'd love to hear about it. Let's discuss how 
+                we can bring your ideas to life.
+            </p>
+            
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <input type="email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <input type="text" class="form-input" placeholder="Subject" required>
+                <textarea class="form-textarea" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary" style="justify-self: center;">Send Message</button>
+            </form>
+
+            <div class="social-links">
+                
+                <a href="https://www.linkedin.com/in/sudarshan-mishra-336a75324/" target="_blank" class="social-link">💼</a>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sudarshan Mishra. Made with lots of chai and ❤️ in India.</p>
+    </footer>
+    <script src="script.js"></script>
+    </body>
+</html>
