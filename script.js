@@ -135,4 +135,32 @@
         window.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 2000);
         })
-   
+   // Wait for DOM to load
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the form
+  const contactForm = document.getElementById("contact-form");
+
+  // Add event listener for form submission
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault(); // prevent default page reload
+
+    // Send the form using EmailJS
+    emailjs
+      .sendForm(
+        "service_vg9c0u8",   // 🔹 Replace with your Service ID from EmailJS
+        "template_ask86co",  // 🔹 Replace with your Template ID
+        "#contact-form",     // 🔹 Matches your form's ID
+        "WXrH-AVfyd7sFpZloY"    // 🔹 Replace with your Public Key (not the secret one)
+      )
+      .then(
+        function (response) {
+          alert("✅ Message sent successfully!");
+          contactForm.reset(); // clear form after sending
+        },
+        function (error) {
+          alert("❌ Failed to send message. Please try again.");
+          console.error("EmailJS Error:", error);
+        }
+      );
+  });
+});
