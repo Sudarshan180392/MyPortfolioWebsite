@@ -306,7 +306,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector(".contact-form");
 
-  emailjs.init("WXrH-AVfyd7sFpZloY"); // initialize with your public key
+  emailjs.init("WXrH-AVfyd7sFpZlo"); // initialize with your public key
 
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
