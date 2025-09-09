@@ -320,7 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
       )
       .then(
         function (response) {
-          alert("✅ Message sent successfully!");
+          alert("✅ Message sent successfully! I will get back soon");
           contactForm.reset();
         },
         function (error) {
