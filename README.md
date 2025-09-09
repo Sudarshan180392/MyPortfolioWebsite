@@ -27,5 +27,5 @@ The portfolio is live here 👉
 ```bash
 Portfolio/
 │── index.html        # Main HTML file
-│── style.css         # Stylesheet
-│__ script.js         # JavaScript functionality
+│── script.js         # JavaScript functionality
+│__ style.css         # Stylesheet
