@@ -267,7 +267,7 @@
     
         const typewriterText = document.querySelector('.subtitle');
         const texts = [
-            'Front End Enthusiast | Full Stack Developer'
+            'Front End Enthusiast | Learning Full Stack Development'
         ];
         let textIndex = 0;
         let charIndex = 0;
