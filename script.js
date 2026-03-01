@@ -220,6 +220,23 @@
         //     }, 2000);
         // });
 
+        // Toggle JS Code for mobile
+        
+// const hamburger = document.getElementById("hamburger");
+// const navLinks = document.getElementById("nav-links");
+
+// hamburger.addEventListener("click", () => {
+//     navLinks.classList.toggle("active");
+// });
+
+// // Auto close of the options after clicks
+// document.querySelectorAll(".nav-links a").forEach(link => {
+//     link.addEventListener("click", () => {
+//         navLinks.classList.remove("active");
+//     });
+// }); 
+
+
         // Intersection Observer for animations
         const observerOptions = {
             threshold: 0.1,
